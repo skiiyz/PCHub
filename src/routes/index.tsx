@@ -10,31 +10,37 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="min-h-screen px-4 py-10" style={{ backgroundColor: "#ffffff" }}>
-      <section className="relative w-full max-w-[1100px] mx-auto rounded-[48px] bg-white border border-slate-200/50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.03)] overflow-hidden h-[760px] flex flex-col">
-        <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover scale-110 transition-transform duration-1000"
-            style={{ objectPosition: "center 35%" }}
-            src="https://cdn.dribbble.com/userupload/37778125/file/original-2b06855274bc3b3466a40656d8faf1ba.mp4"
-          />
-        </div>
+      <header className="w-full max-w-[1100px] mx-auto flex items-center justify-between mb-6 px-2">
+        <span
+          className="font-display text-[18px] md:text-[20px] font-semibold tracking-[0.2em] uppercase"
+          style={{ color: "#0a1b33" }}
+        >
+          PCHub
+        </span>
+        <nav className="flex items-center gap-2">
+          <button className="px-4 py-2 text-[13px] font-semibold text-slate-600 hover:text-[#0a1b33] transition-colors">
+            Build
+          </button>
+          <button className="px-4 py-2 text-[13px] font-semibold text-slate-600 hover:text-[#0a1b33] transition-colors">
+            GitHub
+          </button>
+          <button className="px-4 py-2 text-[13px] font-semibold text-slate-600 hover:text-[#0a1b33] transition-colors">
+            Log In
+          </button>
+          <button className="bg-[#0a152d] text-white rounded-full px-5 py-2 text-[13px] font-semibold flex items-center gap-1">
+            Sign Up
+            <ChevronRight className="w-3.5 h-3.5" />
+          </button>
+        </nav>
+      </header>
 
+      <section className="relative w-full max-w-[1100px] mx-auto rounded-[48px] bg-white border border-slate-200/50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.03)] overflow-hidden min-h-[640px] grid grid-cols-1 md:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="relative z-20 flex-1 px-8 md:px-16 pt-12 md:pt-16 flex flex-col items-start"
+          className="relative z-20 px-8 md:px-14 py-12 md:py-20 flex flex-col items-start justify-center"
         >
-          <span
-            className="font-display text-[20px] md:text-[24px] font-semibold tracking-[0.2em] uppercase mb-4"
-            style={{ color: "#0a1b33" }}
-          >
-            PCHub
-          </span>
           <h1
             className="font-serif text-[44px] md:text-[60px] font-semibold tracking-tight leading-[1.02]"
             style={{ color: "#0a1b33" }}
@@ -55,27 +61,16 @@ function Index() {
           </motion.button>
         </motion.div>
 
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30">
-          <motion.nav
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-            className="flex items-center bg-white/90 backdrop-blur-2xl px-1.5 py-1.5 rounded-full shadow-[0_12px_40px_rgba(0,0,0,0.08)] border border-slate-200/40 gap-1"
-          >
-            <div className="w-9 h-9 bg-white border border-slate-100 shadow-sm rounded-full flex items-center justify-center text-[#0a1b33] text-sm">
-              ✦
-            </div>
-            <button className="px-4 py-2 text-[12px] font-semibold text-slate-500 hover:text-[#0a1b33] transition-colors">
-              About
-            </button>
-            <button className="px-4 py-2 text-[12px] font-semibold text-slate-500 hover:text-[#0a1b33] transition-colors">
-              Github
-            </button>
-            <button className="bg-white px-5 py-2 rounded-full text-[12px] font-semibold text-[#0a1b33] border border-slate-200/60 shadow-sm hover:border-slate-300 transition-all flex items-center gap-1">
-              Try it now
-              <ChevronRight className="w-3.5 h-3.5" />
-            </button>
-          </motion.nav>
+        <div className="relative w-full h-[400px] md:h-auto overflow-hidden select-none">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+            style={{ objectPosition: "center 35%" }}
+            src="https://cdn.dribbble.com/userupload/37778125/file/original-2b06855274bc3b3466a40656d8faf1ba.mp4"
+          />
         </div>
       </section>
 
