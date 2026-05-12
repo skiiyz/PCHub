@@ -8,7 +8,6 @@ const logos = [
   { name: "Shopify", src: "https://svgl.app/library/shopify.svg", from: "#ca8a04", to: "#facc15" },
   { name: "Spotify", src: "https://svgl.app/library/spotify.svg", from: "#be123c", to: "#f472b6" },
   { name: "Google Cloud", src: "https://svgl.app/library/google-cloud.svg", from: "#0ea5e9", to: "#7dd3fc" },
-  { name: "Vercel", src: "https://svgl.app/library/vercel.svg", from: "#0f172a", to: "#475569" },
 ];
 
 const maskStyle: CSSProperties = {
