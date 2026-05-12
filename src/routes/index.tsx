@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="min-h-screen px-4 py-10" style={{ backgroundColor: "#f9fafb" }}>
-      <section className="relative w-full max-w-[1400px] mx-auto rounded-[48px] bg-white border border-slate-200/50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.03)] overflow-hidden h-[600px] flex flex-col">
+      <section className="relative w-full max-w-[1200px] mx-auto rounded-[48px] bg-white border border-slate-200/50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.03)] overflow-hidden h-[520px] flex flex-col">
         <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none">
           <video
             autoPlay
@@ -30,19 +30,19 @@ function Index() {
         >
           <span
             className="font-display text-[20px] md:text-[24px] font-semibold tracking-[0.2em] uppercase mb-4"
-            style={{ color: "#0a1b33" }}
+            style={{ color: "#0a1b33", textShadow: "0 2px 12px rgba(255,255,255,0.6)" }}
           >
             PCHub
           </span>
           <h1
             className="font-serif text-[44px] md:text-[60px] font-semibold tracking-tight leading-[1.02]"
-            style={{ color: "#0a1b33" }}
+            style={{ color: "#0a1b33", textShadow: "0 2px 16px rgba(255,255,255,0.55)" }}
           >
             Build your own PC
             <br />
             from scratch
           </h1>
-          <p className="font-serif italic text-[15px] md:text-[17px] mt-4 max-w-md" style={{ color: "#475569" }}>
+          <p className="font-serif italic text-[15px] md:text-[17px] mt-4 max-w-md" style={{ color: "#475569", textShadow: "0 1px 10px rgba(255,255,255,0.6)" }}>
             Build your own PC and compare it. For every budget and taste.
           </p>
           <motion.button
