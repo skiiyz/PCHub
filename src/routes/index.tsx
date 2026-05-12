@@ -17,7 +17,7 @@ function Index() {
             loop
             muted
             playsInline
-            className="w-full h-full object-cover object-top scale-150 transition-transform duration-1000"
+            className="w-full h-full object-contain object-top transition-transform duration-1000"
             src="https://cdn.dribbble.com/userupload/37778125/file/original-2b06855274bc3b3466a40656d8faf1ba.mp4"
           />
         </div>
