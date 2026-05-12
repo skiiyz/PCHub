@@ -17,7 +17,7 @@ function Index() {
             loop
             muted
             playsInline
-            className="w-full h-full object-contain object-top transition-transform duration-1000"
+            className="w-full h-full object-cover object-top scale-110 transition-transform duration-1000"
             src="https://cdn.dribbble.com/userupload/37778125/file/original-2b06855274bc3b3466a40656d8faf1ba.mp4"
           />
         </div>
@@ -29,7 +29,7 @@ function Index() {
           className="relative z-20 flex-1 px-8 md:px-16 pt-12 md:pt-16 flex flex-col items-start"
         >
           <span
-            className="font-display text-[13px] md:text-[14px] font-semibold tracking-[0.2em] uppercase mb-3"
+            className="font-display text-[20px] md:text-[24px] font-semibold tracking-[0.2em] uppercase mb-4"
             style={{ color: "#0a1b33" }}
           >
             PCHub
