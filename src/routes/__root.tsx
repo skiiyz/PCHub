@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "PCHub" },
+      { name: "description", content: "Hero Showcase is a modern landing page section featuring an animated hero with a video background and a scrolling logo marquee." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "PCHub" },
+      { property: "og:description", content: "Hero Showcase is a modern landing page section featuring an animated hero with a video background and a scrolling logo marquee." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "PCHub" },
+      { name: "twitter:description", content: "Hero Showcase is a modern landing page section featuring an animated hero with a video background and a scrolling logo marquee." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/356ab501-db96-4732-a447-cb5f12ab8a6b/id-preview-3d4ecf7c--b87b8cc5-8a44-4187-9b72-46b840472918.lovable.app-1778621453511.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/356ab501-db96-4732-a447-cb5f12ab8a6b/id-preview-3d4ecf7c--b87b8cc5-8a44-4187-9b72-46b840472918.lovable.app-1778621453511.png" },
     ],
     links: [
       {
