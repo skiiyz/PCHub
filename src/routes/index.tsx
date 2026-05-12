@@ -9,7 +9,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen px-4 py-10" style={{ backgroundColor: "#e5e7eb" }}>
+    <div className="min-h-screen px-4 py-10" style={{ backgroundColor: "#374151" }}>
       <section className="relative w-full max-w-[1100px] mx-auto rounded-[48px] bg-white border border-slate-200/50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.03)] overflow-hidden h-[760px] flex flex-col">
         <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none">
           <video
