@@ -34,12 +34,24 @@ function Index() {
         </nav>
       </header>
 
-      <section className="relative w-full max-w-[1100px] mx-auto rounded-[48px] bg-white border border-slate-200/50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.03)] overflow-hidden min-h-[640px] grid grid-cols-1 md:grid-cols-2">
+      <section className="relative w-full max-w-[1100px] mx-auto rounded-[48px] bg-white border border-slate-200/50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.03)] overflow-hidden h-[760px] flex flex-col">
+        <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover scale-110 transition-transform duration-1000"
+            style={{ objectPosition: "center 35%" }}
+            src="https://cdn.dribbble.com/userupload/37778125/file/original-2b06855274bc3b3466a40656d8faf1ba.mp4"
+          />
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="relative z-20 px-8 md:px-14 py-12 md:py-20 flex flex-col items-start justify-center"
+          className="relative z-20 flex-1 px-8 md:px-16 pt-12 md:pt-16 flex flex-col items-start"
         >
           <h1
             className="font-serif text-[44px] md:text-[60px] font-semibold tracking-tight leading-[1.02]"
@@ -60,18 +72,6 @@ function Index() {
             Start
           </motion.button>
         </motion.div>
-
-        <div className="relative w-full h-[400px] md:h-auto overflow-hidden select-none">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-            style={{ objectPosition: "center 35%" }}
-            src="https://cdn.dribbble.com/userupload/37778125/file/original-2b06855274bc3b3466a40656d8faf1ba.mp4"
-          />
-        </div>
       </section>
 
       <div className="max-w-[1400px] mx-auto">
