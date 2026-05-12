@@ -55,7 +55,7 @@ function Index() {
         >
           <h1
             className="font-serif text-[44px] md:text-[60px] font-semibold tracking-tight leading-[1.02]"
-            style={{ color: "#0a1b33" }}
+            style={{ color: "#ffffff" }}
           >
             Build your own PC
             <br />
