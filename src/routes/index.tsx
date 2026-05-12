@@ -17,7 +17,7 @@ function Index() {
             loop
             muted
             playsInline
-            className="w-full h-full object-cover scale-105 transition-transform duration-1000"
+            className="w-full h-full object-cover object-top scale-150 transition-transform duration-1000"
             src="https://cdn.dribbble.com/userupload/37778125/file/original-2b06855274bc3b3466a40656d8faf1ba.mp4"
           />
         </div>
@@ -26,17 +26,23 @@ function Index() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="z-20 flex-1 px-8 md:px-16 pt-12 md:pt-16 flex flex-col items-start"
+          className="relative z-20 flex-1 px-8 md:px-16 pt-12 md:pt-16 flex flex-col items-start"
         >
+          <span
+            className="font-display text-[13px] md:text-[14px] font-semibold tracking-[0.2em] uppercase mb-3"
+            style={{ color: "#0a1b33" }}
+          >
+            PCHub
+          </span>
           <h1
-            className="font-display text-[42px] md:text-[56px] font-medium tracking-tight leading-[1.05]"
+            className="font-serif text-[44px] md:text-[60px] font-semibold tracking-tight leading-[1.02]"
             style={{ color: "#0a1b33" }}
           >
             Build your own PC
             <br />
             from scratch
           </h1>
-          <p className="font-sans text-[14px] md:text-[15px] mt-4 max-w-md" style={{ color: "#64748b" }}>
+          <p className="font-serif italic text-[15px] md:text-[17px] mt-4 max-w-md" style={{ color: "#475569" }}>
             Build your own PC and compare it. For every budget and taste.
           </p>
           <motion.button
