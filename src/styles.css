@@ -143,5 +143,20 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    background-color: #f9fafb;
+    font-family: var(--font-sans);
   }
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee-scroll 30s linear infinite;
+}
+
+.marquee-pause:hover .animate-marquee {
+  animation-play-state: paused;
 }
