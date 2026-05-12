@@ -1,10 +1,10 @@
 import { type CSSProperties } from "react";
 
 const logos = [
-  { name: "Ozon", src: "https://svgl.app/library/ozon.svg", from: "#1e3a8a", to: "#3b82f6" },
-  { name: "DNS", src: "https://svgl.app/library/dns.svg", from: "#1e40af", to: "#60a5fa" },
+  { name: "Ozon", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6gNxrq7zf_WamlRnYWs0S0h0FS87CMyxy8Q&s", from: "#1e3a8a", to: "#3b82f6" },
+  { name: "DNS", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ke5W_tjrv2ORVxRPVAX9CNLLQveScOnxjA&s", from: "#1e40af", to: "#60a5fa" },
   { name: "Blender", src: "https://svgl.app/library/blender.svg", from: "#1d4ed8", to: "#38bdf8" },
-  { name: "Amazon", src: "https://svgl.app/library/amazon.svg", from: "#6d28d9", to: "#a78bfa" },
+  { name: "Amazon", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoIwGv61BBxMlFDmBHeDvMo8-5HNlM4_8Skw&s", from: "#6d28d9", to: "#a78bfa" },
   { name: "Shopify", src: "https://svgl.app/library/shopify.svg", from: "#ca8a04", to: "#facc15" },
   { name: "Spotify", src: "https://svgl.app/library/spotify.svg", from: "#be123c", to: "#f472b6" },
   { name: "Google Cloud", src: "https://svgl.app/library/google-cloud.svg", from: "#0ea5e9", to: "#7dd3fc" },
