@@ -32,7 +32,7 @@ export function Marquee() {
             />
             <img
               src={logo.src}
-              alt={logo.name}
+              alt={`${logo.name} logo`}
               className="relative z-10 max-h-8 max-w-[60%] object-contain transition-all duration-300 group-hover:brightness-0 group-hover:invert"
             />
           </div>

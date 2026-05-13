@@ -5,11 +5,14 @@ import { Marquee } from "@/components/Marquee";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    links: [{ rel: "canonical", href: "https://pchubb.lovable.app/" }],
+  }),
 });
 
 function Index() {
   return (
-    <div className="min-h-screen px-4 py-10" style={{ backgroundColor: "#ffffff" }}>
+    <main className="min-h-screen px-4 py-10" style={{ backgroundColor: "#ffffff" }}>
       <header className="w-full max-w-[1100px] mx-auto flex items-center justify-between mb-6 px-2">
         <span
           className="font-display text-[18px] md:text-[20px] font-semibold tracking-[0.2em] uppercase"
@@ -80,6 +83,6 @@ function Index() {
       <div className="max-w-[1400px] mx-auto">
         <Marquee />
       </div>
-    </div>
+    </main>
   );
 }
