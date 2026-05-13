@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "motion/react";
-import { ChevronRight } from "lucide-react";
 import { Marquee } from "@/components/Marquee";
+import { SiteHeader } from "@/components/SiteHeader";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -12,30 +12,8 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="min-h-screen px-4 py-10" style={{ backgroundColor: "#ffffff" }}>
-      <header className="w-full max-w-[1100px] mx-auto flex items-center justify-between mb-6 px-2">
-        <span
-          className="font-display text-[18px] md:text-[20px] font-semibold tracking-[0.2em] uppercase"
-          style={{ color: "#0a1b33" }}
-        >
-          PCHub
-        </span>
-        <nav className="flex items-center gap-2">
-          <button className="px-4 py-2 text-[13px] font-semibold text-slate-600 hover:text-[#0a1b33] transition-colors">
-            Build
-          </button>
-          <button className="px-4 py-2 text-[13px] font-semibold text-slate-600 hover:text-[#0a1b33] transition-colors">
-            GitHub
-          </button>
-          <button className="px-4 py-2 text-[13px] font-semibold text-slate-600 hover:text-[#0a1b33] transition-colors">
-            Log In
-          </button>
-          <button className="bg-[#0a152d] text-white rounded-full px-5 py-2 text-[13px] font-semibold flex items-center gap-1">
-            Sign Up
-            <ChevronRight className="w-3.5 h-3.5" />
-          </button>
-        </nav>
-      </header>
+    <main className="min-h-screen px-4 py-10 bg-background">
+      <SiteHeader />
 
       <section className="relative w-full max-w-[1100px] mx-auto rounded-[48px] bg-white border border-slate-200/50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.03)] overflow-hidden h-[760px] flex flex-col">
         <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none">
