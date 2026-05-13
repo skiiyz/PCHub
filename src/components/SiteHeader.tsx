@@ -17,7 +17,7 @@ export function SiteHeader() {
         <Link to="/build" className="px-4 py-2 text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors">
           Build
         </Link>
-        <a href="https://github.com" className="px-4 py-2 text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors">
+        <a href="https://github.com/skiiyz" className="px-4 py-2 text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors">
           GitHub
         </a>
         <button className="px-4 py-2 text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors">
