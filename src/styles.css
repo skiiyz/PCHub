@@ -144,7 +144,6 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    background-color: #f9fafb;
     font-family: var(--font-sans);
   }
 }
