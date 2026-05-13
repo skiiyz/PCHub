@@ -43,10 +43,10 @@ const CATEGORIES: Category[] = [
     key: "cpu",
     label: "Processor (CPU)",
     parts: [
-      { id: "cpu-1", name: "AMD Ryzen 5 5600", rub: 11990, source: "ozon", url: "https://www.ozon.ru/search/?text=AMD+Ryzen+5+5600" },
-      { id: "cpu-2", name: "AMD Ryzen 7 5800X3D", rub: 28990, source: "wdns", url: "https://dns-shop.ru/search/?q=Ryzen+5800X3D" },
-      { id: "cpu-3", name: "Intel Core i5-13400F", rub: 18490, source: "ozon", url: "https://www.ozon.ru/search/?text=Intel+Core+i5-13400F" },
-      { id: "cpu-4", name: "Intel Core i7-13700K", rub: 38990, source: "wdns", url: "https://dns-shop.ru/search/?q=i7-13700K" },
+      { id: "cpu-1", name: "AMD Ryzen 5 5600 OEM", rub: 11681, source: "ozon", url: "https://www.ozon.ru/product/protsessor-cpu-amd-ryzen-5-5600-oem-6-yader-3-5-ggts-turbo-4-4-ggts-socket-am4-7-nm-kesh-32-mb-3079121766/?at=ywtAQ35A3INXQvKRhYZwR8WIN89q40f3YvpX4Uqkmnm8" },
+      { id: "cpu-2", name: "AMD Ryzen 7 7800X3D OEM", rub: 28999, source: "dns", url: "https://www.dns-shop.ru/product/3ecad0b7a46fed20/processor-amd-ryzen-7-7800x3d-oem/" },
+      { id: "cpu-3", name: "Intel Core i5-13400F BOX", rub: 15999, source: "dns", url: "https://www.dns-shop.ru/product/accf0607bcf9d9cb/processor-intel-core-i5-13400f-box/" },
+      { id: "cpu-4", name: "Intel Core i7-13700K BOX", rub: 40799, source: "dns", url: "https://www.dns-shop.ru/product/6d3c9e0c3f93ed20/processor-intel-core-i7-13700k-box/" },
     ],
   },
   {
@@ -54,8 +54,8 @@ const CATEGORIES: Category[] = [
     label: "Graphics Card (GPU)",
     parts: [
       { id: "gpu-1", name: "NVIDIA RTX 4060 8GB", rub: 32990, source: "ozon", url: "https://www.ozon.ru/search/?text=RTX+4060" },
-      { id: "gpu-2", name: "NVIDIA RTX 4070 Super 12GB", rub: 64990, source: "wdns", url: "https://dns-shop.ru/search/?q=RTX+4070+Super" },
-      { id: "gpu-3", name: "NVIDIA RTX 4080 Super 16GB", rub: 109990, source: "wdns", url: "https://dns-shop.ru/search/?q=RTX+4080+Super" },
+      { id: "gpu-2", name: "NVIDIA RTX 4070 Super 12GB", rub: 64990, source: "dns", url: "https://dns-shop.ru/search/?q=RTX+4070+Super" },
+      { id: "gpu-3", name: "NVIDIA RTX 4080 Super 16GB", rub: 109990, source: "dns", url: "https://dns-shop.ru/search/?q=RTX+4080+Super" },
       { id: "gpu-4", name: "AMD Radeon RX 7800 XT 16GB", rub: 54990, source: "ozon", url: "https://www.ozon.ru/search/?text=RX+7800+XT" },
     ],
   },
@@ -64,8 +64,8 @@ const CATEGORIES: Category[] = [
     label: "Motherboard",
     parts: [
       { id: "mb-1", name: "MSI B550 Tomahawk", rub: 14990, source: "ozon", url: "https://www.ozon.ru/search/?text=MSI+B550+Tomahawk" },
-      { id: "mb-2", name: "ASUS ROG Strix B650-A", rub: 22990, source: "wdns", url: "https://dns-shop.ru/search/?q=ROG+Strix+B650-A" },
-      { id: "mb-3", name: "Gigabyte Z790 Aorus Elite", rub: 27990, source: "wdns", url: "https://dns-shop.ru/search/?q=Z790+Aorus+Elite" },
+      { id: "mb-2", name: "ASUS ROG Strix B650-A", rub: 22990, source: "dns", url: "https://dns-shop.ru/search/?q=ROG+Strix+B650-A" },
+      { id: "mb-3", name: "Gigabyte Z790 Aorus Elite", rub: 27990, source: "dns", url: "https://dns-shop.ru/search/?q=Z790+Aorus+Elite" },
     ],
   },
   {
@@ -73,8 +73,8 @@ const CATEGORIES: Category[] = [
     label: "Memory (RAM)",
     parts: [
       { id: "ram-1", name: "Kingston Fury 16GB DDR4-3600", rub: 5490, source: "ozon", url: "https://www.ozon.ru/search/?text=Kingston+Fury+16GB+DDR4" },
-      { id: "ram-2", name: "Corsair Vengeance 32GB DDR5-6000", rub: 12990, source: "wdns", url: "https://dns-shop.ru/search/?q=Corsair+Vengeance+DDR5+6000" },
-      { id: "ram-3", name: "G.Skill Trident Z5 64GB DDR5-6400", rub: 27990, source: "wdns", url: "https://dns-shop.ru/search/?q=Trident+Z5+64GB" },
+      { id: "ram-2", name: "Corsair Vengeance 32GB DDR5-6000", rub: 12990, source: "dns", url: "https://dns-shop.ru/search/?q=Corsair+Vengeance+DDR5+6000" },
+      { id: "ram-3", name: "G.Skill Trident Z5 64GB DDR5-6400", rub: 27990, source: "dns", url: "https://dns-shop.ru/search/?q=Trident+Z5+64GB" },
     ],
   },
   {
@@ -82,8 +82,8 @@ const CATEGORIES: Category[] = [
     label: "Storage (SSD)",
     parts: [
       { id: "ssd-1", name: "Samsung 980 1TB NVMe", rub: 7490, source: "ozon", url: "https://www.ozon.ru/search/?text=Samsung+980+1TB" },
-      { id: "ssd-2", name: "Samsung 990 Pro 2TB NVMe", rub: 18990, source: "wdns", url: "https://dns-shop.ru/search/?q=Samsung+990+Pro+2TB" },
-      { id: "ssd-3", name: "WD Black SN850X 4TB", rub: 36990, source: "wdns", url: "https://dns-shop.ru/search/?q=WD+Black+SN850X+4TB" },
+      { id: "ssd-2", name: "Samsung 990 Pro 2TB NVMe", rub: 18990, source: "dns", url: "https://dns-shop.ru/search/?q=Samsung+990+Pro+2TB" },
+      { id: "ssd-3", name: "WD Black SN850X 4TB", rub: 36990, source: "dns", url: "https://dns-shop.ru/search/?q=WD+Black+SN850X+4TB" },
     ],
   },
   {
@@ -91,8 +91,8 @@ const CATEGORIES: Category[] = [
     label: "Power Supply (PSU)",
     parts: [
       { id: "psu-1", name: "be quiet! Pure Power 12 M 650W", rub: 7990, source: "ozon", url: "https://www.ozon.ru/search/?text=Pure+Power+12+M+650W" },
-      { id: "psu-2", name: "Corsair RM850x 850W 80+ Gold", rub: 13990, source: "wdns", url: "https://dns-shop.ru/search/?q=Corsair+RM850x" },
-      { id: "psu-3", name: "Seasonic Prime TX-1000 1000W", rub: 28990, source: "wdns", url: "https://dns-shop.ru/search/?q=Seasonic+Prime+TX+1000" },
+      { id: "psu-2", name: "Corsair RM850x 850W 80+ Gold", rub: 13990, source: "dns", url: "https://dns-shop.ru/search/?q=Corsair+RM850x" },
+      { id: "psu-3", name: "Seasonic Prime TX-1000 1000W", rub: 28990, source: "dns", url: "https://dns-shop.ru/search/?q=Seasonic+Prime+TX+1000" },
     ],
   },
   {
@@ -100,8 +100,8 @@ const CATEGORIES: Category[] = [
     label: "Case",
     parts: [
       { id: "case-1", name: "DeepCool CC560", rub: 5490, source: "ozon", url: "https://www.ozon.ru/search/?text=DeepCool+CC560" },
-      { id: "case-2", name: "Lian Li Lancool 216", rub: 11990, source: "wdns", url: "https://dns-shop.ru/search/?q=Lancool+216" },
-      { id: "case-3", name: "Fractal Design North", rub: 14990, source: "wdns", url: "https://dns-shop.ru/search/?q=Fractal+Design+North" },
+      { id: "case-2", name: "Lian Li Lancool 216", rub: 11990, source: "dns", url: "https://dns-shop.ru/search/?q=Lancool+216" },
+      { id: "case-3", name: "Fractal Design North", rub: 14990, source: "dns", url: "https://dns-shop.ru/search/?q=Fractal+Design+North" },
     ],
   },
 ];
