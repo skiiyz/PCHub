@@ -283,6 +283,7 @@ function BuildPage() {
               </div>
             )}
 
+            {(!hasAnySelection || warnings.length === 0) && (
             <div className="border-t border-border pt-4">
               <div className="flex justify-between items-baseline">
                 <span className="text-sm text-muted-foreground">{t("build.total")}</span>
@@ -292,6 +293,7 @@ function BuildPage() {
                 </div>
               </div>
             </div>
+            )}
           </aside>
         </div>
       </section>
