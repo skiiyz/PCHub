@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { Marquee } from "@/components/Marquee";
 import { SiteHeader } from "@/components/SiteHeader";
+import { useI18n } from "@/hooks/use-i18n";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -11,6 +12,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const { t } = useI18n();
   return (
     <main className="min-h-screen px-4 py-10 bg-background">
       <SiteHeader />
@@ -41,19 +43,19 @@ function Index() {
               textShadow: "0px 2px 8px rgba(0, 0, 0, 0.6), 0px 0px 30px rgba(0, 0, 0, 0.4)"
             }}
           >
-            Build your own PC
+            {t("hero.title1")}
             <br />
-            from scratch
+            {t("hero.title2")}
           </h1>
           <p className="font-serif italic text-[15px] md:text-[17px] mt-4 max-w-md" style={{ color: "#0a1b33" }}>
-            Build your own PC and compare it. For every budget and taste.
+            {t("hero.sub")}
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             className="mt-6 bg-[#0a152d] text-white rounded-full px-6 py-2.5 text-[13px] font-semibold"
           >
-            Start
+            {t("hero.cta")}
           </motion.button>
         </motion.div>
       </section>
