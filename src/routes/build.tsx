@@ -70,9 +70,9 @@ const CATEGORIES: Category[] = [
     key: "mobo",
     label: "Motherboard",
     parts: [
-      { id: "mb-1", name: "MSI B550 Tomahawk", rub: 14990, source: "ozon", url: "https://www.ozon.ru/search/?text=MSI+B550+Tomahawk", socket: "AM4", ramType: "DDR4", maxRamSpeed: 4400 },
-      { id: "mb-2", name: "ASUS ROG Strix B650-A", rub: 22990, source: "dns", url: "https://dns-shop.ru/search/?q=ROG+Strix+B650-A", socket: "AM5", ramType: "DDR5", maxRamSpeed: 6400 },
-      { id: "mb-3", name: "Gigabyte Z790 Aorus Elite", rub: 27990, source: "dns", url: "https://dns-shop.ru/search/?q=Z790+Aorus+Elite", socket: "LGA1700", ramType: "DDR5", maxRamSpeed: 7600 },
+      { id: "mb-1", name: "MSI MAG B550 Tomahawk", rub: 14599, source: "ozon", url: "https://www.ozon.ru/product/msi-mag-b550-tomahawk-max-wifi-am4-ddr4-materinskaya-plata-1628554023/?at=16tL0JoJ4h349oLXuJYKGXOhYxznV5CQz3K5pF6g9yvN", socket: "AM4", ramType: "DDR4", maxRamSpeed: 5100 },
+      { id: "mb-2", name: "MSI B850 GAMING PLUS WIFI", rub: 17999, source: "dns", url: "https://www.dns-shop.ru/product/ec6a873ec35ed582/materinskaa-plata-msi-b850-gaming-plus-wifi/", socket: "AM5", ramType: "DDR5", maxRamSpeed: 5600 },
+      { id: "mb-3", name: "ASRock Phantom Gaming X870E NOVA", rub: 32999, source: "dns", url: "https://www.dns-shop.ru/product/68d9eb08b2aed9cb/materinskaa-plata-asrock-phantom-gaming-x870e-nova-wifi/", socket: "LGA1700", ramType: "DDR5", maxRamSpeed: 8000 },
     ],
   },
   {
