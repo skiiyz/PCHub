@@ -10,6 +10,8 @@ import {
 
 import appCss from "../styles.css?url";
 import { ThemeProvider } from "@/hooks/use-theme";
+import { I18nProvider } from "@/hooks/use-i18n";
+import { AuthProvider } from "@/hooks/use-auth";
 
 function NotFoundComponent() {
   return (
@@ -140,7 +142,11 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
-        <Outlet />
+        <I18nProvider>
+          <AuthProvider>
+            <Outlet />
+          </AuthProvider>
+        </I18nProvider>
       </ThemeProvider>
     </QueryClientProvider>
   );
