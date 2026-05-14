@@ -60,10 +60,10 @@ const CATEGORIES: Category[] = [
     key: "gpu",
     label: "Graphics Card (GPU)",
     parts: [
-      { id: "gpu-1", name: "NVIDIA RTX 4060 8GB", rub: 32990, source: "ozon", url: "https://www.ozon.ru/search/?text=RTX+4060", watts: 115 },
-      { id: "gpu-2", name: "NVIDIA RTX 4070 Super 12GB", rub: 64990, source: "dns", url: "https://dns-shop.ru/search/?q=RTX+4070+Super", watts: 220 },
-      { id: "gpu-3", name: "NVIDIA RTX 4080 Super 16GB", rub: 109990, source: "dns", url: "https://dns-shop.ru/search/?q=RTX+4080+Super", watts: 320 },
-      { id: "gpu-4", name: "AMD Radeon RX 7800 XT 16GB", rub: 54990, source: "ozon", url: "https://www.ozon.ru/search/?text=RX+7800+XT", watts: 263 },
+      { id: "gpu-1", name: "KFA2 GeForce RTX 4060 8GB CORE Black", rub: 34999, source: "dns", url: "https://www.dns-shop.ru/product/93826d9c94dced20/videokarta-kfa2-geforce-rtx-4060-core-black-46nsl8md9nxk/", watts: 115 },
+      { id: "gpu-2", name: "ASUS GeForce RTX 5060 16GB Ti DUAL OC", rub: 54999, source: "dns", url: "https://www.dns-shop.ru/product/a7c2b65e20d6d9cb/videokarta-asus-geforce-rtx-5060-ti-dual-oc-dual-rtx5060ti-o16g/", watts: 180 },
+      { id: "gpu-3", name: "ASUS GeForce RTX 5070 12GB PRIME OC Edition", rub: 69999, source: "dns", url: "https://www.dns-shop.ru/product/3dd353dcfb37d582/videokarta-asus-geforce-rtx-5070-prime-oc-edition-prime-rtx5070-o12g/", watts: 270 },
+      { id: "gpu-4", name: "GIGABYTE AMD Radeon 9060 XT 16GB GAMING OC", rub: 41999, source: "dns", url: "https://www.dns-shop.ru/product/37d191a63202d9cb/videokarta-gigabyte-amd-radeon-9060-xt-gaming-oc-gv-r9060xtgaming-oc-16gda", watts: 182 },
     ],
   },
   {
