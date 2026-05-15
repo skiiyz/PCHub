@@ -4,7 +4,7 @@ import { Marquee } from "@/components/Marquee";
 import { SiteHeader } from "@/components/SiteHeader";
 import { useI18n } from "@/hooks/use-i18n";
 import { useAuth } from "@/hooks/use-auth";
-import Ballpit from "@/components/backgrounds/Ballpit.jsx";
+import Ballpit from "@/components/backgrounds/Ballpit";
 
 export const Route = createFileRoute("/")({
   component: Index,
