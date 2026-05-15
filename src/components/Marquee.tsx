@@ -8,7 +8,6 @@ const logos = [
   { name: "Shopify", src: "https://svgl.app/library/shopify.svg", from: "#ca8a04", to: "#facc15" },
   { name: "Spotify", src: "https://svgl.app/library/spotify.svg", from: "#be123c", to: "#f472b6" },
   { name: "Google", src: "https://svgl.app/library/google.svg", from: "#0ea5e9", to: "#7dd3fc" },
-  { name: "Claude", src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/claude-ai-icon.png", from: "#be123c", to: "#f472b6" },
 ];
 
 const maskStyle: CSSProperties = {
