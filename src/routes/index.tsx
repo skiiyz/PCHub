@@ -18,7 +18,24 @@ function Index() {
   const { user, profile } = useAuth();
   const displayName = profile?.username ?? user?.email?.split("@")[0] ?? "";
   return (
-    <main className="min-h-screen px-4 py-10 bg-background">
+    <main className="relative min-h-screen px-4 py-10 bg-background overflow-hidden">
+      <div className="fixed inset-0 z-0 pointer-events-none select-none">
+        <Ballpit
+          count={200}
+          gravity={0.5}
+          friction={0.9975}
+          wallBounce={0.95}
+          followCursor={true}
+          colors={[0xD4F5FF, 0x78FABC, 0x0a152d, 0xffffff]}
+          ambientColor={16777215}
+          ambientIntensity={1}
+          lightIntensity={200}
+          materialParams={{ metalness: 0.4, roughness: 0.5, clearcoat: 1, clearcoatRoughness: 0.15 }}
+          className="w-full h-full"
+        />
+      </div>
+
+      <div className="relative z-10">
       <SiteHeader />
 
       <section className="relative w-full max-w-[1100px] mx-auto rounded-[48px] bg-white border border-slate-200/50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.03)] overflow-hidden h-[760px] flex flex-col">
@@ -31,22 +48,6 @@ function Index() {
             className="w-full h-full object-cover scale-110 transition-transform duration-1000"
             style={{ objectPosition: "center 35%" }}
             src="https://cdn.dribbble.com/userupload/37778125/file/original-2b06855274bc3b3466a40656d8faf1ba.mp4"
-          />
-        </div>
-
-        <div className="absolute inset-0 z-10">
-          <Ballpit
-            count={160}
-            gravity={0.5}
-            friction={0.9975}
-            wallBounce={0.95}
-            followCursor={true}
-            colors={[0xD4F5FF, 0x78FABC, 0x0a152d, 0xffffff]}
-            ambientColor={16777215}
-            ambientIntensity={1}
-            lightIntensity={200}
-            materialParams={{ metalness: 0.4, roughness: 0.5, clearcoat: 1, clearcoatRoughness: 0.15 }}
-            className="w-full h-full"
           />
         </div>
 
@@ -111,6 +112,7 @@ function Index() {
 
       <div className="max-w-[1400px] mx-auto">
         <Marquee />
+      </div>
       </div>
     </main>
   );
