@@ -26,11 +26,11 @@ function Index() {
           friction={0.9975}
           wallBounce={0.95}
           followCursor={true}
-          colors={[0xD4F5FF, 0x78FABC, 0x0a152d, 0xffffff]}
+          colors={[0x0a152d, 0x4f46e5, 0x78FABC, 0x3b82f6]}
           ambientColor={16777215}
           ambientIntensity={1}
           lightIntensity={200}
-          materialParams={{ metalness: 0.4, roughness: 0.5, clearcoat: 1, clearcoatRoughness: 0.15 }}
+          materialParams={{ metalness: 0.5, roughness: 0.4, clearcoat: 1, clearcoatRoughness: 0.15 }}
           className="w-full h-full"
         />
       </div>
