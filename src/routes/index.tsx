@@ -19,7 +19,7 @@ function Index() {
   const displayName = profile?.username ?? user?.email?.split("@")[0] ?? "";
   return (
     <main className="relative min-h-screen px-4 py-10 bg-background overflow-hidden">
-      <div className="fixed inset-0 z-0 select-none" style={{ pointerEvents: "none" }}>
+      <div className="fixed inset-0 z-0 select-none">
         <Ballpit
           count={200}
           gravity={0.5}
@@ -32,7 +32,6 @@ function Index() {
           lightIntensity={200}
           materialParams={{ metalness: 0.5, roughness: 0.4, clearcoat: 1, clearcoatRoughness: 0.15 }}
           className="w-full h-full"
-          style={{ pointerEvents: "auto" }}
         />
       </div>
 
