@@ -5,6 +5,7 @@ import { useI18n } from "@/hooks/use-i18n";
 import { useAuth } from "@/hooks/use-auth";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import logo from "@/assets/pclab-logo.png";
+import GradientText from "@/components/text/GradientText";
 
 export function SiteHeader() {
   const { theme, toggle } = useTheme();
@@ -14,9 +15,13 @@ export function SiteHeader() {
     <header className="w-full max-w-[1100px] mx-auto flex items-center justify-between mb-6 px-2">
       <Link to="/" className="flex items-center gap-3">
         <img src={logo} alt="PCLab logo" className="w-14 h-14 md:w-16 md:h-16 object-contain" />
-        <span className="font-display text-[20px] md:text-[24px] font-semibold tracking-[0.2em] uppercase text-foreground">
+        <GradientText
+          colors={["#2c78f5", "#19c1dd", "#6366F1", "#2c78f5"]}
+          animationSpeed={6}
+          className="font-display text-[20px] md:text-[24px] font-semibold tracking-[0.2em] uppercase"
+        >
           PCLab
-        </span>
+        </GradientText>
       </Link>
       <nav className="flex items-center gap-2">
         <Link to="/build" className="px-4 py-2 text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors">
