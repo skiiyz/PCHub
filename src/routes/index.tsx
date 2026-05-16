@@ -95,37 +95,6 @@ function Index() {
       </section>
 
       <div className="max-w-[1400px] mx-auto">
-        <section className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 px-2">
-          {[
-            {
-              title: "About PCLab",
-              body:
-                "PCLab is your interactive playground for building custom PCs. Browse curated components, compare prices, and assemble configurations that match every budget and taste — all in one place.",
-            },
-            {
-              title: "Friendly & Useful",
-              body:
-                "Designed for everyone, from first-time builders to seasoned enthusiasts. Compatibility checks, live totals, and a clear step-by-step flow make picking parts effortless and genuinely fun.",
-            },
-            {
-              title: "Beautiful by Design",
-              body:
-                "Every pixel is crafted with care. Smooth animations, elegant typography, and a polished, modern interface make PCLab a brilliant experience to look at and use.",
-            },
-          ].map((card) => (
-            <div
-              key={card.title}
-              className="rounded-3xl bg-white/90 backdrop-blur border border-slate-200/60 shadow-[0_20px_60px_-20px_rgba(0,0,0,0.15)] p-6 md:p-8"
-            >
-              <h3 className="font-serif text-[22px] md:text-[26px] font-semibold text-[#0a152d] mb-3">
-                {card.title}
-              </h3>
-              <p className="text-[14px] md:text-[15px] leading-relaxed text-slate-600">
-                {card.body}
-              </p>
-            </div>
-          ))}
-        </section>
         <Marquee />
 
         <section className="mt-16 mb-12 grid grid-cols-1 md:grid-cols-3 gap-6 px-2">
