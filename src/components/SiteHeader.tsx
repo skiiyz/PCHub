@@ -24,32 +24,32 @@ export function SiteHeader() {
         </GradientText>
       </Link>
       <nav className="flex items-center gap-2">
-        <Link to="/build" className="px-4 py-2 text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors">
+        <Link to="/build" className="px-4 py-2 text-[13px] font-semibold text-white/70 hover:text-white transition-colors">
           {t("nav.build")}
         </Link>
-        <a href="https://github.com/skiiyz" className="px-4 py-2 text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors">
+        <a href="https://github.com/skiiyz" className="px-4 py-2 text-[13px] font-semibold text-white/70 hover:text-white transition-colors">
           {t("nav.github")}
         </a>
         {user ? (
           <>
-            <span className="px-3 py-2 text-[13px] font-semibold text-foreground">
+            <span className="px-3 py-2 text-[13px] font-semibold text-white">
               {profile?.username ?? user.email}
             </span>
             <button
               onClick={signOut}
-              className="px-4 py-2 text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors"
+              className="px-4 py-2 text-[13px] font-semibold text-white/70 hover:text-white transition-colors"
             >
               {t("nav.logout")}
             </button>
           </>
         ) : (
           <>
-            <Link to="/login" className="px-4 py-2 text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/login" className="px-4 py-2 text-[13px] font-semibold text-white/70 hover:text-white transition-colors">
               {t("nav.login")}
             </Link>
             <Link
               to="/signup"
-              className="bg-primary text-primary-foreground rounded-full px-5 py-2 text-[13px] font-semibold inline-flex items-center gap-1"
+              className="bg-white text-[#0a152d] rounded-full px-5 py-2 text-[13px] font-semibold inline-flex items-center gap-1 hover:bg-white/90 transition-colors"
             >
               {t("nav.signup")}
               <ChevronRight className="w-3.5 h-3.5" />
@@ -60,7 +60,7 @@ export function SiteHeader() {
         <button
           onClick={toggle}
           aria-label="Toggle theme"
-          className="w-9 h-9 flex items-center justify-center rounded-full border border-border text-foreground hover:bg-accent transition-colors"
+          className="w-9 h-9 flex items-center justify-center rounded-full border border-white/30 text-white hover:bg-white/10 transition-colors"
         >
           {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
         </button>
