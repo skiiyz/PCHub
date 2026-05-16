@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { useI18n } from "@/hooks/use-i18n";
 import { useAuth } from "@/hooks/use-auth";
 import MetaBalls from "@/components/backgrounds/MetaBalls";
+import BorderGlow from "@/components/ui/BorderGlow";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -141,6 +142,50 @@ function Index() {
           ))}
         </section>
         <Marquee />
+
+        <section className="mt-16 mb-12 grid grid-cols-1 md:grid-cols-3 gap-6 px-2">
+          {[
+            {
+              title: "Open Source",
+              body:
+                "Built in the open. Contribute parts, fixes, and translations on GitHub — PCLab grows with its community.",
+              colors: ["#2c78f5", "#19c1dd", "#6366F1"],
+              glow: "200 90 65",
+            },
+            {
+              title: "Always Free",
+              body:
+                "No paywalls, no accounts required to browse. Compare components and plan your dream build without spending a cent.",
+              colors: ["#19c1dd", "#6366F1", "#2c78f5"],
+              glow: "190 90 65",
+            },
+            {
+              title: "Crafted with Care",
+              body:
+                "Curated catalogs, real-time totals, and compatibility hints — every detail is tuned to make PC building delightful.",
+              colors: ["#6366F1", "#2c78f5", "#19c1dd"],
+              glow: "240 90 70",
+            },
+          ].map((card) => (
+            <BorderGlow
+              key={card.title}
+              colors={card.colors}
+              glowColor={card.glow}
+              backgroundColor="#0f1426"
+              borderRadius={24}
+              glowIntensity={1.2}
+              animated
+              className="p-6 md:p-8 min-h-[180px]"
+            >
+              <h3 className="font-serif text-[22px] md:text-[26px] font-semibold text-white mb-3">
+                {card.title}
+              </h3>
+              <p className="text-[14px] md:text-[15px] leading-relaxed text-white/70">
+                {card.body}
+              </p>
+            </BorderGlow>
+          ))}
+        </section>
       </div>
       </div>
     </main>
