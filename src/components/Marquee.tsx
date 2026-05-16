@@ -5,7 +5,6 @@ const logos = [
   { name: "DNS", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ke5W_tjrv2ORVxRPVAX9CNLLQveScOnxjA&s", from: "#1e40af", to: "#60a5fa" },
   { name: "Apple", src: "https://svgl.app/library/apple.svg", from: "#1d4ed8", to: "#38bdf8" },
   { name: "Amazon", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoIwGv61BBxMlFDmBHeDvMo8-5HNlM4_8Skw&s", from: "#6d28d9", to: "#a78bfa" },
-  { name: "Shopify", src: "https://svgl.app/library/shopify.svg", from: "#ca8a04", to: "#facc15" },
   { name: "Spotify", src: "https://svgl.app/library/spotify.svg", from: "#be123c", to: "#f472b6" },
   { name: "Google", src: "https://svgl.app/library/google.svg", from: "#0ea5e9", to: "#7dd3fc" },
 ];
