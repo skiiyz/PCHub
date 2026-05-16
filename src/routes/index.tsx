@@ -4,7 +4,6 @@ import { Marquee } from "@/components/Marquee";
 import { SiteHeader } from "@/components/SiteHeader";
 import { useI18n } from "@/hooks/use-i18n";
 import { useAuth } from "@/hooks/use-auth";
-import MetaBalls from "@/components/backgrounds/MetaBalls";
 import BorderGlow from "@/components/ui/BorderGlow";
 
 export const Route = createFileRoute("/")({
@@ -20,20 +19,6 @@ function Index() {
   const displayName = profile?.username ?? user?.email?.split("@")[0] ?? "";
   return (
     <main className="relative min-h-screen px-4 py-10 bg-background overflow-hidden">
-      <div className="fixed inset-0 z-0 select-none bg-[#0a0a14]">
-        <MetaBalls
-          color="#19c1dd"
-          cursorBallColor="#2c78f5"
-          speed={0.3}
-          ballCount={18}
-          animationSize={32}
-          clumpFactor={1.1}
-          cursorBallSize={3}
-          enableMouseInteraction
-          enableTransparency={false}
-        />
-      </div>
-
       <div className="relative z-10">
       <SiteHeader />
 
