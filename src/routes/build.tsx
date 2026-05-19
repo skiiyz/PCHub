@@ -79,9 +79,13 @@ const CATEGORIES: Category[] = [
     key: "ram",
     label: "Memory (RAM)",
     parts: [
-      { id: "ram-1", name: "Kingston Fury 16GB DDR4-3600", rub: 5490, source: "ozon", url: "https://www.ozon.ru/search/?text=Kingston+Fury+16GB+DDR4", ramType: "DDR4", ramSpeed: 3600 },
-      { id: "ram-2", name: "Corsair Vengeance 32GB DDR5-6000", rub: 12990, source: "dns", url: "https://dns-shop.ru/search/?q=Corsair+Vengeance+DDR5+6000", ramType: "DDR5", ramSpeed: 6000 },
-      { id: "ram-3", name: "G.Skill Trident Z5 64GB DDR5-6400", rub: 27990, source: "dns", url: "https://dns-shop.ru/search/?q=Trident+Z5+64GB", ramType: "DDR5", ramSpeed: 6400 },
+      { id: "ram-1", name: "Kingston FURY Beast Black 16GB (2x8GB)", rub: 16899, source: "dns", url: "https://www.dns-shop.ru/product/5d78bc3afad6ed20/operativnaa-pamat-kingston-fury-beast-black-kf436c17bbk216-16-gb/", ramType: "DDR4", ramSpeed: 3600 },
+      { id: "ram-2", name: "Kingston FURY Beast Black 8GB (1x8GB)", rub: 7999, source: "dns", url: "https://www.dns-shop.ru/product/b7209fec7326d9cb/operativnaa-pamat-kingston-fury-beast-black-kf432c16bb8wp-8-gb/", ramType: "DDR4", ramSpeed: 3200 },
+      { id: "ram-3", name: "ADATA XPG Lancer Blade 16GB (1x16GB)", rub: 22999, source: "dns", url: "https://www.dns-shop.ru/product/14d288c04230ed20/operativnaa-pamat-adata-xpg-lancer-blade-ax5u5600c4616g-slabbk-16-gb/", ramType: "DDR5", ramSpeed: 5600 },
+      { id: "ram-4", name: "", rub: 27990, source: "dns", url: "", ramType: "DDR5", ramSpeed: 6400 },
+      { id: "ram-5", name: "", rub: 27990, source: "dns", url: "", ramType: "DDR5", ramSpeed: 6400 },
+      { id: "ram-6", name: "", rub: 27990, source: "dns", url: "", ramType: "DDR5", ramSpeed: 6400 },
+      { id: "ram-7", name: "", rub: 27990, source: "dns", url: "", ramType: "DDR5", ramSpeed: 6400 },
     ],
   },
   {
