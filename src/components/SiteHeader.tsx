@@ -27,7 +27,7 @@ export function SiteHeader() {
         <Link to="/build" className="px-4 py-2 text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors">
           {t("nav.build")}
         </Link>
-        <a href="https://github.com/skiiyz" className="px-4 py-2 text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors">
+        <a href="https://github.com/skiiyz/PCLab" className="px-4 py-2 text-[13px] font-semibold text-muted-foreground hover:text-foreground transition-colors">
           {t("nav.github")}
         </a>
         {user ? (
