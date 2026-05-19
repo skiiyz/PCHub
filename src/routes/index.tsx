@@ -125,7 +125,7 @@ function Index() {
               key={card.title}
               colors={card.colors}
               glowColor={card.glow}
-              backgroundColor="#242424"
+              backgroundColor="#120F17"
               borderRadius={24}
               glowIntensity={1.2}
               animated
