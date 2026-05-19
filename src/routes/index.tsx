@@ -103,21 +103,21 @@ function Index() {
               title: "Open Source",
               body:
                 "Built in the open. Contribute parts, fixes, and translations on GitHub — PCLab grows with its community.",
-              colors: ["#2c78f5", "#19c1dd", "#6366F1"],
+              colors: ["#c084fc", "#f472b6", "#38bdf8"],
               glow: "200 90 65",
             },
             {
               title: "Always Free",
               body:
                 "No paywalls, no accounts required to browse. Compare components and plan your dream build without spending a cent.",
-              colors: ["#19c1dd", "#6366F1", "#2c78f5"],
+              colors: ["#c084fc", "#f472b6", "#38bdf8"],
               glow: "190 90 65",
             },
             {
               title: "Crafted with Care",
               body:
                 "Curated catalogs, real-time totals, and compatibility hints — every detail is tuned to make PC building delightful.",
-              colors: ["#6366F1", "#2c78f5", "#19c1dd"],
+              colors: ["#c084fc", "#f472b6", "#38bdf8"],
               glow: "240 90 70",
             },
           ].map((card) => (
